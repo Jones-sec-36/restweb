@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butterfly - Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fdfcfb;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff7f50, #ff4500);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            margin: 0 15px;
+            transition: color 0.3s;
+            font-size: 1.1rem;
+        }
+
+        header nav a:hover {
+            color: #ffd700;
+        }
+
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            background: url('banner-placeholder.jpg') no-repeat center center/cover;
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+            color: white;
+            text-align: center;
+        }
+
+        .banner:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+        }
+
+        .banner-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+            color: #ffd700;
+        }
+
+        .banner-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .banner-content a {
+            background: #ff6347;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .banner-content a:hover {
+            background: #e53e2e;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            background: #fff8ef;
+            gap: 30px;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ff4500;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ff4500;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                height: auto;
+                padding: 30px 20px;
+            }
+
+            .banner-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .features {
+                gap: 20px;
+                padding: 20px;
+            }
+
+            header nav a {
+                margin: 0 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Welcome to Butterfly</h1>
+            <p>Experience the finest flavors and a cozy ambiance at Butterfly. We serve happiness on a plate!</p>
+            <a href="#features">Explore Now</a>
+        </div>
+    </div>
+
+    <section id="features" class="features">
+        <div class="feature">
+            <img src="ambi.jpg" alt="Cozy Ambiance">
+            <h3>Cozy Ambiance</h3>
+            <p>Enjoy your meals in a warm, welcoming, and beautifully designed space.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Butterfly. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
